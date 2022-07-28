@@ -1,16 +1,12 @@
 import Image from "next/image"
+import style from "../styles/introduction.module.css"
 
 export default function Introduction() {
     return (
         <div className="container-fluid mt-5">
             <div className="row mt-3">
-                <div className="col-md-7 mx-auto">
-                    <div
-                        className="card"
-                        style={{
-                            border: "none"
-                        }}
-                    >
+                <div className="col-md-7 col-sm-12 mx-auto">
+                    <div className={`card ${style.introCardNoBorder}`}>
                         <div className="row no-gutters">
                             <div className="col-auto">
                                 <Image
@@ -23,7 +19,7 @@ export default function Introduction() {
                             </div>
                             <div className="col">
                                 <div className="card-block px-2">
-                                    <p className="card-text">
+                                    <p className={`${style.introText} card-text`}>
                                         Hi, I am Samgan, I know the adds are bit annoying but i hope you
                                         understand. Talking about me, I excel at solving complex problems
                                         involving logic and step by step breakdown of the problem. Besides, to
@@ -60,10 +56,15 @@ export default function Introduction() {
                                     >
                                         <Image src="/icons/github.png" width={40} height={40} alt="github" />
                                     </a>
-                                    <a href="https://ko-fi.com/D1D21691Y" rel="noreferrer" target="_blank" className="ms-3">
+                                    <a
+                                        href="https://ko-fi.com/D1D21691Y"
+                                        rel="noreferrer"
+                                        target="_blank"
+                                        className="ms-3"
+                                    >
                                         <Image
-                                            height="40"
-                                            width="160"
+                                            height={40}
+                                            width={160}
                                             style="border:0px;height:36px;"
                                             src="https://cdn.ko-fi.com/cdn/kofi1.png?v=3"
                                             border="0"
