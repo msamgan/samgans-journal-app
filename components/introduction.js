@@ -65,7 +65,6 @@ export default function Introduction() {
                                         <Image
                                             height={40}
                                             width={160}
-                                            style="border:0px;height:36px;"
                                             src="https://cdn.ko-fi.com/cdn/kofi1.png?v=3"
                                             border="0"
                                             alt="Buy Me a Coffee at ko-fi.com"
