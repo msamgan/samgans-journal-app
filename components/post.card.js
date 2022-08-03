@@ -1,20 +1,13 @@
-import Image from "next/image"
 import Link from "next/link"
+import Tags from "./tags"
 
 export default function PostCard() {
     return (
         <div className="">
-            <div className="card shadow-lg rounded">
+            <div className="card shadow-lg rounded mt-3">
                 <div className="card-body">
                     <div className="card-text">
-                        <p>
-                            <Link href="/">
-                                <a className="">#code-quality</a>
-                            </Link>
-                            <Link href="/">
-                                <a className="ms-2">#vscode</a>
-                            </Link>
-                        </p>
+                        <Tags></Tags>
                         <h2>
                             <Link href={`/`}>How to Add Laravel Pint to VS Code Formatter</Link>
                         </h2>
