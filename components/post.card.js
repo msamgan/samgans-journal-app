@@ -9,7 +9,7 @@ export default function PostCard() {
                     <div className="card-text">
                         <Tags></Tags>
                         <h2>
-                            <Link href={`/`}>How to Add Laravel Pint to VS Code Formatter</Link>
+                            <Link href={`/post`}>How to Add Laravel Pint to VS Code Formatter</Link>
                         </h2>
                         <p>
                             I have been using the unsatisfactory formatters from a long time. All of them have
